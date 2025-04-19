@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+input {
+    margin: 5px;
+    padding: 8px;
+    font-family: inherit;
+}
+
+button {
+    padding: 8px 12px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.icon-hover:hover {
+    border-color: #3b71ca !important;
+    background-color: #ffffff !important;
+}
+
+    .icon-hover:hover i {
+        color: #3b71ca !important;
+    }

@@ -1,0 +1,10 @@
+C:\Users\DELL\source\repos\frontend\bin\Debug\frontend.exe.config
+C:\Users\DELL\source\repos\frontend\bin\Debug\frontend.exe
+C:\Users\DELL\source\repos\frontend\bin\Debug\frontend.pdb
+C:\Users\DELL\source\repos\frontend\obj\Debug\frontend.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\frontend\obj\Debug\frontend.Form1.resources
+C:\Users\DELL\source\repos\frontend\obj\Debug\frontend.Properties.Resources.resources
+C:\Users\DELL\source\repos\frontend\obj\Debug\frontend.csproj.GenerateResource.cache
+C:\Users\DELL\source\repos\frontend\obj\Debug\frontend.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\frontend\obj\Debug\frontend.exe
+C:\Users\DELL\source\repos\frontend\obj\Debug\frontend.pdb

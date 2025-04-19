@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>User Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+        <div class="card shadow-sm p-4 mx-auto" style="max-width: 600px;">
+            <div class="d-flex align-items-center mb-4">
+                <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; font-size: 28px;">
+                    U
+                </div>
+                <h4 class="ms-3 mb-0">User Profile</h4>
+            </div>
+
+            <form id="userDetailsForm">
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6 form-floating">
+                        <input type="text" class="form-control" id="userName" placeholder="Full Name" value="John Doe" readonly />
+                        <label for="userName">Full Name</label>
+                    </div>
+                    <div class="col-md-6 form-floating">
+                        <input type="email" class="form-control" id="userEmail" placeholder="Email" value="john@example.com" readonly />
+                        <label for="userEmail">Email</label>
+                    </div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="userPhone" placeholder="Phone" value="+1234567890" readonly />
+                    <label for="userPhone">Phone</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="userAddress" placeholder="Address" value="123 Main St, City, Country" readonly />
+                    <label for="userAddress">Address</label>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button type="button" id="editBtn" class="btn btn-outline-primary">Edit</button>
+                    <button type="submit" id="saveBtn" class="btn btn-primary d-none">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+  const editBtn = document.getElementById('editBtn');
+  const saveBtn = document.getElementById('saveBtn');
+  const form = document.getElementById('userDetailsForm');
+  const inputs = form.querySelectorAll('input');
+
+  editBtn.addEventListener('click', () => {
+    inputs.forEach(input => input.removeAttribute('readonly'));
+    editBtn.classList.add('d-none');
+    saveBtn.classList.remove('d-none');
+  });
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    inputs.forEach(input => input.setAttribute('readonly', true));
+    saveBtn.classList.add('d-none');
+    editBtn.classList.remove('d-none');
+    // TODO: Add save logic here (e.g., API call)
+    alert('Changes saved!');
+  });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

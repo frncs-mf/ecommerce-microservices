@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container py-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                <li class="breadcrumb-item active" aria-current="page">GoPro HERO6 4K Action Camera</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://mdbootstrap.com/img/bootstrap-ecommerce/items/1.webp" alt="Product Image" class="img-fluid rounded shadow-sm" />
+            </div>
+            <div class="col-md-6">
+                <h2>GoPro HERO6 4K Action Camera - Black</h2>
+                <h4 class="text-primary">$790.50</h4>
+                <p>Capture stunning 4K videos with the GoPro HERO6, featuring advanced stabilization and waterproof design.</p>
+
+                <div class="mb-3">
+                    <label for="quantity" class="form-label">Quantity</label>
+                    <input type="number" id="quantity" class="form-control" value="1" min="1" />
+                </div>
+
+                <button class="btn btn-primary mb-4">Add to Cart</button>
+
+                <ul class="nav nav-tabs" id="productTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs" type="button" role="tab" aria-controls="specs" aria-selected="true">Specifications</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</button>
+                    </li>
+                </ul>
+                <div class="tab-content p-3 border border-top-0" id="productTabContent">
+                    <div class="tab-pane fade show active" id="specs" role="tabpanel" aria-labelledby="specs-tab">
+                        <ul>
+                            <li>Video Resolution: 4K</li>
+                            <li>Waterproof up to 10m</li>
+                            <li>Battery life: 2 hours</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                        <p>No reviews yet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
